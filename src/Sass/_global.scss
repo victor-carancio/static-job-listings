@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
+
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: $light-grayish-cyan-background;
+}
+
+.cards-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.company-name {
+  color: $desaturated-dark-cyan;
+  font-size: 16px;
+  font-weight: 700;
+}
+.position-title {
+  color: $very-dark-grayish-cyan;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  cursor: pointer;
+  &:hover {
+    color: $desaturated-dark-cyan;
+  }
+}
+.card-row {
+  background-color: white;
+  height: 250px;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  border-left: 5px solid $desaturated-dark-cyan;
+  @include media-breakpoint-up(lg) {
+    height: 150px;
+  }
+}
+
+.info-container {
+  position: relative;
+}
+.separator {
+  position: absolute;
+  bottom: 0;
+  visibility: visible;
+  height: 1px;
+  width: 80%;
+  background-color: $dark-grayish-cyan;
+  @include media-breakpoint-up(lg) {
+    visibility: hidden;
+    height: 0px;
+    width: 0;
+  }
+}
+.info-img {
+  position: absolute;
+  top: 0;
+  left: -10%;
+  transform: translateY(-50%);
+
+  @include media-breakpoint-up(lg) {
+    left: 0;
+    position: relative;
+    transform: translateY(0%);
+  }
+  img {
+    width: 50px;
+    @include media-breakpoint-up(lg) {
+      width: 88px;
+    }
+  }
+}
+
+.filter {
+  color: $desaturated-dark-cyan;
+  background-color: $light-grayish-cyan-filter;
+  border-radius: 3px;
+  padding: 2px 8px 1px 8px;
+  cursor: pointer;
+  &:hover {
+    color: $light-grayish-cyan-background;
+    background-color: $desaturated-dark-cyan;
+  }
+}
+
+.featured-job,
+.new-job {
+  height: 23px;
+  padding: 4px 6px 10px 6px;
+  border-radius: 15px;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.new-job {
+  background-color: $desaturated-dark-cyan;
+}
+.info-job {
+  color: $dark-grayish-cyan;
+}
+.featured-job {
+  background-color: $very-dark-grayish-cyan;
+}
+
+.margin-p {
+  margin: 0 0;
+}

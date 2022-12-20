@@ -1,0 +1,50 @@
+.filters-container {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  height: 75px;
+  width: 82%;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+  .filters {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .single-filter {
+    color: $desaturated-dark-cyan;
+    border-radius: 3px;
+    background-color: $light-grayish-cyan-filter;
+    padding: 2px 8px;
+  }
+  .close {
+    background-color: $desaturated-dark-cyan;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 25px;
+    height: 28px;
+    cursor: pointer;
+    &:hover {
+      background-color: $very-dark-grayish-cyan;
+    }
+    .cross {
+      color: $light-grayish-cyan-background;
+      font-size: 25px;
+    }
+  }
+  .clear-btn {
+    font-size: 17px;
+    margin-left: auto;
+    color: $desaturated-dark-cyan;
+    cursor: pointer;
+    &:hover {
+      color: $very-dark-grayish-cyan;
+      text-decoration: underline;
+    }
+  }
+}

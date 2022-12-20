@@ -1,0 +1,10 @@
+.header-nav {
+  background-color: $desaturated-dark-cyan;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 75px;
+  background-image: $header-desktop;
+  @include media-breakpoint-up(lg) {
+    background-image: $header-mobile;
+  }
+}
